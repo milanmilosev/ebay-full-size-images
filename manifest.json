@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "View Full Size Images on eBay-Kleinanzeigen",
+  "version": "1.0",
+  "description": "One-Click full size image extractor for eBay-Kleinanzeigen (https://www.ebay-kleinanzeigen.de/).",
+  "homepage_url": "https://milanmilosev.com",
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "index.html",
+    "default_title": "ChromiePop"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "all_frames": false,
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/; object-src 'self'"
+}
