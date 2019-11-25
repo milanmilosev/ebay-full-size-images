@@ -1,4 +1,4 @@
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.message === "FETCH_IMAGE") {
     // Extract images from product page or gallery
     const imageContainer =
@@ -9,11 +9,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     const imageSource =
       imageArray.length && imageArray.map(src => src.getAttribute("src"));
 
+    console.log(imageSource[0]);
     // Listener
     chrome.runtime.sendMessage({
       message: "SHOW_RESULTS",
       results: {
-        status: imageSource ? true : false,
         imageSource: imageSource
       }
     });
