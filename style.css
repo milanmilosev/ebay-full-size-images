@@ -47,10 +47,10 @@
 }
 
 .ebay-klein__main__image {
-  background: url("https://svgshare.com/i/GMS.svg") no-repeat center center;
+  background: url("image.svg") no-repeat center center;
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 50px auto 0;
 }
 

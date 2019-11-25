@@ -1,12 +1,9 @@
-// background.js
+// Run script each time Chrome extension icon clicked
 document.addEventListener("DOMContentLoaded", function() {
-  const button = document.getElementById("loadImages");
-  button.addEventListener("click", function() {
-    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-      var activeTab = tabs[0];
-      chrome.tabs.sendMessage(activeTab.id, {
-        message: "FETCH_IMAGE"
-      });
+  chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+    var activeTab = tabs[0];
+    chrome.tabs.sendMessage(activeTab.id, {
+      message: "FETCH_IMAGE"
     });
   });
 });
