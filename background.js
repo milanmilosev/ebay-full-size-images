@@ -12,14 +12,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   if (request.message === "SHOW_RESULTS") {
     const status = request.results.status;
     const app = document.querySelector(".ebay-klein__result");
-    const containerImg = document.querySelector(".ebay-klein__main__image");
+    const noImageMsg = document.querySelector(".ebay-klein__no-image");
 
-    status ? (containerImg.style.display = "none") : null;
-    console.log(app);
+    status ? (noImageMsg.style.display = "none") : null;
+
     app.innerHTML = status
       ? request.results.imageSource.map(
           img => `<a href="${img}" target="_blank"><img src="${img}"/></a>`
         )
-      : `<p>There's no images</p>`;
+      : null;
   }
 });

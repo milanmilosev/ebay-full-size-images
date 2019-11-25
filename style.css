@@ -54,24 +54,6 @@
   margin: 50px auto 0;
 }
 
-.ebay-klein__btn {
-  font-family: Helvetica, sans-serif;
-  font-size: 13px;
-  min-width: 140px;
-  min-height: 26px;
-  margin: 20px auto;
-  min-width: 65px;
-  box-sizing: border-box;
-  text-align: center;
-  height: 30px;
-  width: 47%;
-  display: block;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 0px 5px;
-  background: linear-gradient(rgb(247, 247, 247) 0%, rgb(255, 255, 255) 100%);
-  border: 1px solid rgb(171, 182, 191);
-}
 .ebay-klein__image-svg {
   width: 100%;
 }
@@ -90,4 +72,15 @@
   width: 100%;
   padding: 0;
   border: 0;
+}
+
+.ebay-klein__no-image__text {
+  color: rgb(100, 115, 130);
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.ebay-klein__no-image__text a {
+  color: rgb(100, 115, 130);
+  font-weight: bold;
 }
