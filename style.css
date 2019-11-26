@@ -45,33 +45,14 @@
   background: rgb(255, 255, 255);
   margin: 8px 0px;
 }
-
 .ebay-klein__main__image {
-  background: url("https://svgshare.com/i/GMS.svg") no-repeat center center;
+  background: url("image.svg") no-repeat center center;
   background-size: cover;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 50px auto 0;
 }
 
-.ebay-klein__btn {
-  font-family: Helvetica, sans-serif;
-  font-size: 13px;
-  min-width: 140px;
-  min-height: 26px;
-  margin: 20px auto;
-  min-width: 65px;
-  box-sizing: border-box;
-  text-align: center;
-  height: 30px;
-  width: 47%;
-  display: block;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 0px 5px;
-  background: linear-gradient(rgb(247, 247, 247) 0%, rgb(255, 255, 255) 100%);
-  border: 1px solid rgb(171, 182, 191);
-}
 .ebay-klein__image-svg {
   width: 100%;
 }
@@ -82,12 +63,33 @@
   padding: 5px;
   justify-content: space-evenly;
 }
+
 .ebay-klein__result a {
   margin: 5px;
-  width: 45%;
+  transition: all 0.22s;
+  width: 136px;
+  height: 136px;
 }
+
+.ebay-klein__result a:hover {
+  opacity: 0.8;
+}
+
 .ebay-klein__result img {
   width: 100%;
+  height: 100%;
   padding: 0;
   border: 0;
+  object-fit: cover;
+}
+
+.ebay-klein__no-image__text {
+  color: rgb(100, 115, 130);
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.ebay-klein__no-image__text a {
+  color: rgb(100, 115, 130);
+  font-weight: bold;
 }
