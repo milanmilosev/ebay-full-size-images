@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "eBay-Kleinanzeigen Full Size Image",
+  "name": "eBay-Kleinanzeigen Show Full Size Images",
   "version": "1.2",
-  "description": "One-Click full size image extractor for eBay-Kleinanzeigen.",
+  "description": "With one click view and download all images from eBay-Kleinanzeigen page in original size.",
   "homepage_url": "https://milanmilosev.com",
   "browser_action": {
     "default_icon": "logo.png",
@@ -20,6 +20,6 @@
   "icons": {
     "128": "128.png"
   },
-  "permissions": ["activeTab"],
+  "permissions": ["https://ebay-kleinanzeigen.de/*"],
   "content_security_policy": "script-src 'self' https://www.gstatic.com/; object-src 'self'"
 }
