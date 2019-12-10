@@ -1,6 +1,9 @@
 # ebay-full-size-images
 ### Extract and view all images from eBay-Kleinanzeigen page in original size.
 
+[ADD TO CHROME](https://chrome.google.com/webstore/detail/ebay-kleinanzeigen-show-f/cbpmpfinkejojdnhndpgofocindnmejn?hl=en)
+
+
 eBay-Kleinanzeigen Full Size Image is a simple chrome extension which helps you extract all the images from web page and view them in original size. No more hassle to search each image from a page source.
 
 This extension allows you to :
