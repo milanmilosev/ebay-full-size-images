@@ -83,6 +83,10 @@
   object-fit: cover;
 }
 
+.ebay-klein__no-image {
+  display: none;
+}
+
 .ebay-klein__no-image__text {
   color: rgb(100, 115, 130);
   text-align: center;
@@ -92,4 +96,47 @@
 .ebay-klein__no-image__text a {
   color: rgb(100, 115, 130);
   font-weight: bold;
+}
+
+.ebay-klein__spinner {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.ebay-klein__spinner__1, 
+.ebay-klein__spinner__2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ccc;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.ebay-klein__spinner__2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
 }
